@@ -1,0 +1,22 @@
+type Review {
+    id: ID
+    author: ID
+    description: String
+    productName: String
+    usefulnessScore: Float
+}
+
+type TopReviewers {
+    reviewers: [User]
+}
+
+extend type User @key(fields: "id") {
+    id: ID @external
+    numberOfReviews: Int
+    averageReviewScore: Float
+}
+
+extend type Query {
+    reviewById(id: String): Review
+    topReviewers: TopReviewers
+}
