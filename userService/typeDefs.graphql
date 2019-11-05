@@ -1,0 +1,9 @@
+type User @key(fields: "id") {
+    id: ID,
+    name: String,
+    favoriteColor: String
+}
+
+extend type Query {
+    userById(id: ID): User
+}
