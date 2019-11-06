@@ -1,6 +1,6 @@
 {
   "name": "federation-entity-extension",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Project to test out Apollo Federation functionality",
   "main": "",
   "scripts": {
@@ -21,5 +21,8 @@
     "@apollo/gateway": "^0.10.8",
     "apollo-server": "^2.9.7",
     "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "apollo": "^2.21.0"
   }
 }

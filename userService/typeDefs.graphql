@@ -2,6 +2,7 @@ type User @key(fields: "id") {
     id: ID,
     name: String,
     favoriteColor: String
+    starSign: String
 }
 
 extend type Query {
